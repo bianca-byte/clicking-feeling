@@ -1,0 +1,240 @@
+/* universal styles */
+
+header, body, button {
+    font-family: 'Nimbus Sans L';
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.25em;
+    background-color: aqua;
+    display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  }
+a {
+    text-decoration: underline;
+  }
+
+a:active {
+    background-color:aqua;
+  }
+
+@font-face {
+    font-family: 'Nimbus Sans L';
+    src: url('fonts/NimbusSanL-Regu.woff2') format('woff2'),
+        url('fonts/NimbusSanL-Regu.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nimbus Sans L';
+    src: url('fonts/NimbusSanL-ReguItal.woff2') format('woff2'),
+        url('fonts/NimbusSanL-ReguItal.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+a:hover, .class:hover {
+    color:blue;
+  }
+
+a:active {
+    background-color: whitesmoke;
+
+}  
+a:visited {
+    display:none;
+  }
+
+ul.a {
+list-style-type: circle;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: aqua;
+}
+
+::selection {
+  color: white;
+  background: aqua;
+}
+
+/* layout */
+
+
+.left-container {
+   width: 300px;
+   margin-left: 19px;
+   border-radius: 0px;
+  
+}
+
+.container-right {
+        width: 500px;
+        margin-left: 19px;
+        margin-top: 16px;
+        min-height: 100vh;
+        position: relative;
+}
+
+
+    
+img {
+        max-width: 500px;
+        float: none;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+}
+
+.far-right{
+
+background-color: burlywood;
+max-width: 400px;
+
+}
+
+/* dropdown */
+
+/* This is a modified version of code originally by Alex Megahy */
+
+
+
+/* Accordion controls 
+========================================================================== */
+
+
+/* Main accordion container 
+========================================================================== */
+.accordion {
+  margin: 5px auto 0;
+  padding: 5px 20px;
+ 
+}
+
+.accordion:hover{
+  cursor: pointer;
+  color: blue;
+}
+
+/* Main accordion title 
+========================================================================== */
+.accordion h1{
+  display: inline;
+  font-weight: 100;
+}
+
+/* Main accordion arrow 
+========================================================================== */
+.accordion button{
+  float: right;
+  background-color: transparent;
+  border-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  outline: none;
+}
+
+
+/* Accordion dropdown panel
+========================================================================== */
+/*
+.dropdown-text{
+  margin-left: 19px;
+}
+*/
+/* Rotate class for dropdown button
+========================================================================== */
+
+.rotate {
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+
+.rotate.up {
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+
+/* navigation */
+
+nav{
+  max-width: 300px;
+    padding-top: 10px;
+    text-decoration: underline;
+
+}
+
+.menu-item{
+  color:black;
+  text-decoration: none;
+  /* padding:1em; */
+  padding-bottom: 1em;
+  display:block;
+
+
+}
+
+.menu-item:hover {
+    background-color:black;
+    color:white;
+  }
+
+.about{
+    padding:1em;
+    display:block;
+
+}
+
+.people{
+    padding: 1em;
+    display: block;
+}
+
+.projects{
+    padding: 1em;
+    display: block;
+}
+
+.projects {
+    padding: 1em;
+    display: block;
+}
+
+.resources {
+    padding: 1em;
+    display: block;
+}
+
+/* mobile */
+@media screen and (max-width: 912px) {
+    nav {
+      width:91vw;
+    }
+    .news a {
+      display:inline-block;
+    }
+    .container-inner {
+      width: calc(91vw + 1em);
+    }
+    .content {
+      margin-top: 1em;
+    }
+  }
+
+  /* bot */
+
+/* counter */
+
+.counter {
+padding-top: 40px;
+}
