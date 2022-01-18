@@ -3,7 +3,7 @@
 header, body, button {
     font-family: 'Nimbus Sans L';
     font-style: normal;
-    font-size: .9rem;
+    font-size: .8rem;
     line-height: 1.35em;
     background-color: aqua;
     display:flex;
