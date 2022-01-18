@@ -10,6 +10,7 @@ header, body, button {
   flex-direction:row;
   flex-wrap:wrap;
   }
+
 a {
     text-decoration: underline;
   }
@@ -38,7 +39,7 @@ a:active {
 
 
 a:hover, .class:hover {
-    color:blue;
+    color:#fa0000;
   }
 
 a:active {
@@ -65,17 +66,26 @@ list-style-type: circle;
 
 /* layout */
 
+body {
+  margin: 0;
+}
+
+.left-class-info{
+  margin-left: 19px;
+}
 
 .left-container {
    width: 300px;
-   margin-left: 19px;
    border-radius: 0px;
   
 }
+.p-margin {
+  margin-top: 0%;
+}
 
 .container-right {
-        width: 500px;
-        margin-left: 19px;
+        max-width: 500px;
+        margin-left: 1.5em;
         margin-top: 16px;
         min-height: 100vh;
         position: relative;
@@ -100,9 +110,10 @@ max-width: 400px;
 
 }
 
+
+
 /* dropdown */
 
-/* This is a modified version of code originally by Alex Megahy */
 
 
 
@@ -174,45 +185,51 @@ nav{
 
 }
 
+
+
 .menu-item{
   color:black;
   text-decoration: none;
   /* padding:1em; */
   padding-bottom: 1em;
   display:block;
-
-
+ 
+ 
 }
+
+
 
 .menu-item:hover {
     background-color:black;
     color:white;
+
   }
 
 .about{
-    padding:1em;
+    padding:1em 1em 1em 1.5em;
     display:block;
 
 }
 
 .people{
-    padding: 1em;
-    display: block;
+  padding:1em 1em 1em 1.5em;
+  display: block;
+  
 }
 
 .projects{
-    padding: 1em;
-    display: block;
+  padding:1em 1em 1em 1.5em;
+  display: block;
 }
 
 .projects {
-    padding: 1em;
-    display: block;
+  padding:1em 1em 1em 1.5em;
+  display: block;
 }
 
 .resources {
-    padding: 1em;
-    display: block;
+  padding:1em 1em 1em 1.5em;
+  display: block;
 }
 
 /* mobile */
@@ -220,18 +237,52 @@ nav{
     nav {
       width:91vw;
     }
+
+    /*
     .news a {
       display:inline-block;
     }
+    */
+
+    /* 
     .container-inner {
       width: calc(91vw + 1em);
     }
     .content {
       margin-top: 1em;
+    } */
+
+    .mobile-left{
+      text-align: center;
+      margin-left: 0%;
     }
+    nav {
+      max-width: 100%;
+      margin: 0%;
+    }
+
+    .menu-item{
+      margin: 0%;
+    }
+    
+    .about{
+      margin: 0%;
+    }
+
+    .left-container {
+      width: 100%;
+      border-radius: 0px;
+      margin-left: 0%;
+
+    }
+    .container-right{
+      margin-left: 1em;
+      margin-right: 1em;
+    }
+   
+ 
   }
 
-  /* bot */
 
 /* counter */
 
