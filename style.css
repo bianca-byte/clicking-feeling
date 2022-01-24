@@ -69,9 +69,11 @@ list-style-type: circle;
 body {
   margin: 0;
 }
+/*
 .section-titles { 
   text-align: center;
 }
+*/
 
 .left-class-info{
   margin-left: 19px;
