@@ -103,7 +103,10 @@ body {
   position: relative;
 }
 
-
+#quote {
+  padding-left: 30px;
+  padding-right: 60px;
+}
 
 img {
   max-width: 500px;
